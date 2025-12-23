@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>Ryu<span>Zacki</span></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#portfolio">Portofolio</a></li>
+                    <li><a href="#experience">Pengalaman</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Halo, saya <span class="highlight">Ryuzacki Achmad Fadilah</span></h2>
+                    <!-- Perbaiki judul profesi -->
+                    <h1>Web Developer</h1> <!-- Ganti "Profesi Anda" -->
+                    <p>Developer yang melihat kode sebagai alat untuk menyelesaikan masalah nyata.
+                        Fokus pada writing clean, maintainable code dan best practices.
+                        Percaya bahwa teknologi terbaik adalah yang memberikan solusi paling sederhana untuk kebutuhan yang kompleks.</p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn primary">Lihat Portofolio</a>
+                        <a href="#contact" class="btn secondary">Hubungi Saya</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image-container">
+                        <!-- GANTI dengan nama file yang benar -->
+                        <img src="profile.jpg" alt="Ryuzacki Achmad Fadilah" 
+                            onerror="this.style.display='none'; this.parentElement.classList.add('no-image');">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang <span>Saya</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Sedikit Cerita Tentang Saya</h3>
+                    <p>Di sini Anda bisa menceritakan latar belakang pendidikan, pengalaman, dan minat Anda. Jelaskan apa yang membuat Anda unik dan apa yang Anda tawarkan.</p>
+                    <p>Anda juga bisa menulis tentang passion, nilai-nilai, atau filosofi kerja Anda. Bagian ini membantu pengunjung memahami siapa Anda secara personal dan profesional.</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-label">Nama:</span>
+                            <span class="info-value">Ryuzacki Achmad Fadilah</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">ryufaraday99@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Telepon:</span>
+                            <span class="info-value">+62 851 7978 1137</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Lokasi:</span>
+                            <span class="info-value">Jakarta, Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>2+</h3>
+                        <p>Proyek Selesai</p>
+                    </div>
+                    <div class="stat">
+                        <h3>6+</h3>
+                        <p>Bulan Pengalaman</p>
+                    </div>
+                    <div class="stat">
+                        <h3>0+</h3>
+                        <p>Klien Puas</p>
+                    </div>
+                    <div class="stat">
+                        <h3>6+</h3>
+                        <p>Skill Dikuasai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Keahlian <span>Saya</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Teknis</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML/CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>UI/UX Design</span>
+                            <span>45%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-language"></i> Bahasa</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Bahasa Indonesia</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Bahasa Inggris</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Komunikasi</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Manajemen Waktu</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Teamwork</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portofolio <span>Saya</span></h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="other">Lainnya</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Website Perusahaan</h3>
+                        <p>Deskripsi singkat tentang proyek website perusahaan yang Anda buat.</p>
+                        <a href="#" class="portfolio-link">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>UI/UX Design</h3>
+                        <p>Deskripsi singkat tentang proyek desain antarmuka yang Anda kerjakan.</p>
+                        <a href="#" class="portfolio-link">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>E-Commerce</h3>
+                        <p>Deskripsi singkat tentang proyek website e-commerce yang Anda kembangkan.</p>
+                        <a href="#" class="portfolio-link">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="other">
+                    <div class="portfolio-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Aplikasi Mobile</h3>
+                        <p>Deskripsi singkat tentang proyek aplikasi mobile yang Anda buat.</p>
+                        <a href="#" class="portfolio-link">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Pengalaman <span>Saya</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - Sekarang</div>
+                    <div class="timeline-content">
+                        <h3>Posisi Pekerjaan</h3>
+                        <h4>Nama Perusahaan</h4>
+                        <p>Deskripsi tanggung jawab dan pencapaian Anda di posisi ini. Jelaskan apa yang Anda pelajari dan kontribusi Anda.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>Posisi Pekerjaan Sebelumnya</h3>
+                        <h4>Nama Perusahaan Sebelumnya</h4>
+                        <p>Deskripsi tanggung jawab dan pencapaian Anda di posisi sebelumnya. Jelaskan pengalaman yang Anda dapatkan.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2016 - 2020</div>
+                    <div class="timeline-content">
+                        <h3>Pendidikan</h3>
+                        <h4>Nama Universitas</h4>
+                        <p>Jurusan yang Anda ambil dan pencapaian akademik selama kuliah. Bisa juga mencantumkan organisasi yang diikuti.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi <span>Saya</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Mari Berkolaborasi!</h3>
+                    <p>Jika Anda memiliki proyek menarik atau ingin berdiskusi, jangan ragu untuk menghubungi saya.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>ryufaraday99@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telepon</h4>
+                                <p>+62 851 7978 1137</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Lokasi</h4>
+                                <p>Jakarta, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subjek" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> ryuzacki. Semua hak dilindungi.</p>
+            <p>Dibuat dengan <i class="fas fa-heart"></i> sebagai portofolio pribadi</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
