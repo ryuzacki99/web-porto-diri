@@ -473,14 +473,15 @@ nav {
 }
 
 .timeline-date {
-    flex: 1;
+    flex: 0 0 100px; /* Perkecil sedikit dari 120px agar konten punya ruang */
     padding: 10px 20px;
     background-color: var(--secondary-color);
     color: white;
     border-radius: 5px;
     text-align: center;
     font-weight: 600;
-    align-self: center;
+    align-self: flex-start;
+    font-size: 0.9rem;
 }
 
 .timeline-content {
@@ -489,7 +490,7 @@ nav {
     background-color: white;
     border-radius: 10px;
     box-shadow: var(--shadow);
-    margin: 0 20px;
+    margin: 0 10px 0 30px; /* Sesuaikan margin agar tidak terlalu jauh dari garis */
     position: relative;
 }
 
@@ -748,32 +749,42 @@ footer i.fa-heart {
         font-size: 2rem;
     }
     
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
+.hero-text h1 {
+        font-size: 1.8rem; /* Perkecil sedikit lagi agar tidak patah berantakan */
+    }
+
+    .hero-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .timeline::before {
+        left: 10px; /* Geser garis timeline lebih ke pinggir di HP kecil */
+    }
+
+    .timeline-date {
+        display: none; /* Opsional: Di HP sangat kecil, tanggal bisa disembunyikan atau ditaruh di atas konten */
     }
     
-    .about-stats {
-        grid-template-columns: 1fr;
-    }
-    
-    .skills-grid {
-        grid-template-columns: 1fr;
+    .timeline-content {
+        margin-left: 30px;
     }
 }
 
 /* Profile Image Styling - PASTIKAN INI DITAMBAHKAN */
 .profile-image-container {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%; /* INI yang bikin bulat */
-    overflow: hidden; /* INI yang motong sudut */
+    width: 100%;           /* Ubah dari 300px ke 100% */
+    max-width: 300px;      /* Batasi maksimal tetap 300px */
+    aspect-ratio: 1 / 1;   /* Memastikan tetap kotak/bulat sempurna */
+    height: auto;          /* Biarkan tinggi menyesuaikan lebar */
+    border-radius: 50%;
+    overflow: hidden;
     box-shadow: 0 0 0 5px var(--light-color), 
                 0 10px 30px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, var(--light-color) 0%, #c3cfe2 100%);
+    margin: 0 auto;        /* Tambahkan ini agar gambar ke tengah di mobile */
 }
 
 .profile-image-container img {
@@ -800,4 +811,5 @@ footer i.fa-heart {
         width: 250px;
         height: 250px;
     }
+
 }
